@@ -1,0 +1,46 @@
+.app {
+  text-align: center;
+}
+
+.map {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 20px auto;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.x-shape {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x-shape::before,
+.x-shape::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: inherit;
+  transform-origin: center;
+}
+
+.x-shape::before {
+  transform: rotate(45deg);
+}
+
+.x-shape::after {
+  transform: rotate(-45deg);
+}
